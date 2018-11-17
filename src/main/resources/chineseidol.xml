@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="小李" class="com.example.spring.chineseIdol.Juggler">
+        <constructor-arg value="10"></constructor-arg>
+    </bean>
+    <bean id="bike" class="com.example.spring.chineseIdol.Bike"></bean>
+    <bean id="小张" class="com.example.spring.chineseIdol.JugglerBike" >
+        <constructor-arg ref="bike"></constructor-arg>
+    </bean>
+</beans>
